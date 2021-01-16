@@ -1,0 +1,39 @@
+<div class="container-fluid" id="bg-img">
+    <mat-card class="bg-card">
+        <mat-card-header>
+            <mat-card-title class="header">
+                <mat-icon>code</mat-icon>My Skills:&nbsp;
+            </mat-card-title>
+        </mat-card-header>    
+        <mat-card-content class="container-fluid" >
+           <marquee *ngIf="!isSmall" behavior="alternate" >
+                <p class="container-fluid" style="background-color:black ;">
+                    <img mat-card-sm-image  src="/assets/template/skills/java.png"/>
+                    <img mat-card-sm-image  src="/assets/template/skills/MySQL.png"/>
+                    <img mat-card-sm-image  src="/assets/template/skills/c-logo.png"/>
+                    
+                </p>
+                <p class="container" style="background-color:black ;">
+                    <img mat-card-md-image  src="/assets/template/skills/html-css.png"/>
+                    <img mat-card-md-image  src="/assets/template/skills/angular.png"/>
+                </p>
+            </marquee>
+            <marquee *ngIf="isSmall" behavior="scroll" scrollamount="5" >
+                <p class="container-fluid" style="background-color:rgb(24, 22, 22) ;">
+                    <img mat-card-sm-image  src="/assets/template/skills/java.png"/>
+                    <img mat-card-sm-image  src="/assets/template/skills/MySQL.png"/>
+                    <img mat-card-sm-image  src="/assets/template/skills/c-logo.png"/>
+                    
+                </p>
+                <p class="container" style="background-color:rgb(20, 20, 20) ;">
+                    <img mat-card-md-image  src="/assets/template/skills/html-css.png"/>
+                    <img mat-card-md-image  src="/assets/template/skills/angular.png"/>
+                </p>
+            </marquee>
+        </mat-card-content>
+        
+    </mat-card>
+</div>
+
+
+

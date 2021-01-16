@@ -1,0 +1,27 @@
+#welcome {
+    flex-direction: column;
+    height: 760px;
+    padding-top: 3em;
+    padding-bottom:3em ;
+    padding-bottom: 4% ;
+}
+
+.layer_one {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.layer_one .avatar-container {
+    position: relative;
+}
+
+.layer_one .avatar-container .illustration {
+    height: 760px;
+    z-index: 3;
+    position: relative;
+}
+
+
+

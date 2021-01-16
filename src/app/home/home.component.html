@@ -1,0 +1,65 @@
+<mat-drawer-container [hasBackdrop]="true">
+
+    <mat-drawer #drawer [mode]="side" style="z-index: 1000;">
+        <div style="background-color: rgba(98, 0, 255, 0.911);" class="container-fluid">
+            <span style="color: white; font-size: 18px;font-family: 'Times New Roman', Times, serif; ">
+                <mat-icon style="color: white;margin-top:5px ;">account_circle</mat-icon>
+                Jitendra Patil
+            </span>
+        </div>
+        <div class="container">
+            <div class="d-flex">
+                <a class="menu-col" (click) = "showArea=false" routerLink=""><mat-icon>home</mat-icon> Home</a>
+            </div>
+            <div class="d-flex">
+                <a class="menu-col" (click) = "showArea=true" routerLink="about"><mat-icon>info</mat-icon> About Me</a>
+            </div>
+            <div class="d-flex">
+                <a class="menu-col" (click) = "showArea=true" routerLink="skills"><mat-icon>code</mat-icon> Skills</a>
+            </div>
+            <div class="d-flex">
+                <a class="menu-col" (click) = "showArea=true" routerLink="contact"><mat-icon>contact_support</mat-icon> Contact</a>
+            </div>
+        </div>        
+    </mat-drawer>
+    <mat-drawer-content >
+        <p class="header">
+            <mat-toolbar  [ngClass]="{'sticky' : isSticky, 'nonSticky':!isSticky}">
+                <button type="button" mat-button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <a mat-button routerLink="" (click)="showArea = false" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                    <mat-icon>home</mat-icon>
+                </a>
+                <span class="Best-text">My Profile</span>
+                <span class="example-spacer"></span>
+                <button  mat-icon-button (click)="like=!like" class="example-icon favorite-icon"  aria-label="Example icon-button with heart icon">
+                    <mat-icon [ngClass]="{'bg-clr': like}">favorite</mat-icon>
+                </button>
+            </mat-toolbar>
+        </p>
+        <section style="z-index: 1; background-color: lightblue;" *ngIf="showArea">
+            <div style="padding-top:15px ;"></div>
+            <div>
+                <router-outlet></router-outlet>
+            </div>
+        </section>
+        <section *ngIf="!showArea">
+            <section id="about" style="margin-top: -4%; padding-bottom: 5%; background-color: lightblue;">
+                <app-welcome-home></app-welcome-home>
+                
+            </section>
+            <section style="z-index: 1000;">
+                <app-about style="z-index: 50;"></app-about>
+            </section>
+            <section>
+                <app-skills></app-skills>
+            </section>
+            <section >
+                <app-contact routerActive></app-contact>
+            </section>
+        </section>
+    </mat-drawer-content>
+</mat-drawer-container>
+         
+     

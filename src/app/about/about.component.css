@@ -1,0 +1,40 @@
+.bg-img{
+    background-image:url('/assets/template/welcome/a.png') ;
+    background-size: cover;
+    size: 100%;
+}
+.bg-card{
+    z-index: 100;
+    box-shadow: 2px 2px 3px 3px gray;
+    margin-top: -3%;
+}
+.my-img{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-border-radius: 99em;
+        -moz-border-radius: 99em;
+        border-radius: 99em;
+        border: 3px solid #d4e7fe;
+        margin-right: 5px ;
+}
+.mystyle{
+    font-family: playfair-display;
+    font-size: 20px;
+    text-shadow: 1px 1px black;
+    color: rgb(45, 146, 180);
+}
+@media screen and (max-width: 500px){
+    .mystyle{
+        font-family: playfair-display;
+        font-size: 13px;
+        text-shadow: 1px 1px gray;
+        color: rgb(45, 146, 180);
+    }   
+}
+.header{
+    font-family: cursive;
+    font-size: 30px;
+    color: crimson;
+    text-shadow: 1px 1px black;
+}

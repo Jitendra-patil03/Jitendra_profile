@@ -1,0 +1,29 @@
+#bg-img{
+    background-image: url('/assets/template/skills/bg-skills.png') ;
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    z-index: 1;
+    margin-top: -2% ;
+
+}
+.bg-card{
+    background-color: transparent;
+    margin-top: 10px ;
+    
+}
+
+.li-bg{
+    background-color: rgba(25, 176, 187, 0.801);
+}
+.mrq{
+    behavior: alternate ;
+}
+.header{
+    font-family: cursive;
+    font-size: 30px;
+    color: crimson;
+    text-shadow: 1px 1px black;
+    background-color: white;
+    justify-self:center ;
+}

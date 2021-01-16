@@ -1,0 +1,46 @@
+.header{
+    font-family: cursive;
+    font-size: 30px;
+    color: crimson;
+    text-shadow: 1px 1px black;
+    background-color: transparent;
+    justify-self:center ;
+}
+.bg{
+    box-shadow: 2px 2px 2px 2px rgb(105, 103, 103);
+    
+}
+.bg-con{
+    background-color: lightblue;
+}
+#phone{
+    font-size: 20px;
+    color: rgb(39, 152, 228);
+     text-shadow: 1px 1px black;
+     font-family: 'Times New Roman', Times, serif;
+}
+#mail{
+    font-size: 20px;
+    color: rgb(233, 175, 17);
+     text-shadow: 1px 1px black;
+     font-family: 'Times New Roman', Times, serif;
+}
+.flt{
+    float: 1 1;
+}
+#imgSize{
+
+}
+@media screen and (max-width:500px){
+    #phone{
+        font-size: 18px;
+    }
+    #mail{
+        font-size: 13px;
+    }
+    #imgSize{
+        display: cover;
+        width: 40px;
+        height: 40px;
+    }
+}
